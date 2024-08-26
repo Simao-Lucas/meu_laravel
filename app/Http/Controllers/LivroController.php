@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 use App\Models\Livro;
-use App\Http\Requests\LivroRequest;
+
 
 class LivroController extends Controller
 {
@@ -33,9 +33,11 @@ class LivroController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(LivroRequest $request)
+    public function store(StoreLivroRequest $request)
     {
-        $livro = Livro::create($request->all());
+        $validated = $request->validated();
+        $livro = Livro::create($validated);
+        request()->session()->flash('alert-info','Livro cadastrado com sucesso');
 
         return redirect("/livros/{$livro->id}");
     }
@@ -63,10 +65,12 @@ class LivroController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(LivroRequest $request, Livro $livro)
+    public function update(UpdateLivroRequest $request, Livro $livro)
     {
-        $livro->update($request->all());
-
+        $validated = $request->validated();
+        $livro->update($validated);
+        request()->session()->flash('alert-info','Livro atualizado com sucesso');
+        
         return redirect("/livros/{$livro->id}");
     }
 

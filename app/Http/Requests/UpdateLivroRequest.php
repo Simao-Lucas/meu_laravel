@@ -22,7 +22,19 @@ class UpdateLivroRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'titulo' => 'required',
+            'autor' => 'required',
+            'isbn' => ['required','unique:livros,isbn,' . $this->livro->id]
+        ];
+    }
+
+    public function messages()
+    {
+        return[
+            'titulo.required'=> 'Insira um título.',
+            'autor.required'=> 'Insira um autor.',
+            'isbn.required'=> 'Insira um isbn.',
+            'isbn.unique' => 'Isbn já cadastrado.',
         ];
     }
 }

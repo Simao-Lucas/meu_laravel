@@ -13,6 +13,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'laravel/ui' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Ui\\UiServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -32,6 +39,13 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    ),
+  ),
+  'uspdev/laravel-usp-faker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Uspdev\\UspdevFakerServiceProvider',
     ),
   ),
   'uspdev/laravel-usp-theme' => 

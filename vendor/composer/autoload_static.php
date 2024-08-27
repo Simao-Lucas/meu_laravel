@@ -28,6 +28,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '1796d19e76addb1e45a93616baaf30d4' => __DIR__ . '/..' . '/uspdev/replicado/helpers/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f57d353b41eb2e234b26064d63d8c5dd' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Filesystem/functions.php',
@@ -53,6 +54,9 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'U' => 
         array (
             'Uspdev\\UspTheme\\' => 16,
+            'Uspdev\\Replicado\\' => 17,
+            'Uspdev\\Cache\\' => 13,
+            'Uspdev\\' => 7,
         ),
         'T' => 
         array (
@@ -126,6 +130,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
             'League\\Flysystem\\' => 17,
             'League\\Config\\' => 14,
             'League\\CommonMark\\' => 18,
+            'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sail\\' => 13,
@@ -134,6 +139,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
+            'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\' => 11,
         ),
         'G' => 
@@ -195,6 +201,18 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Uspdev\\UspTheme\\' => 
         array (
             0 => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src',
+        ),
+        'Uspdev\\Replicado\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/uspdev/replicado/src',
+        ),
+        'Uspdev\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/uspdev/cache/src',
+        ),
+        'Uspdev\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -405,6 +423,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
+        'Laravel\\Ui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/src',
+        ),
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
@@ -426,6 +448,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
             1 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections',
             2 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Conditionable',
+        ),
+        'Illuminate\\Foundation\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/auth-backend',
         ),
         'Illuminate\\' => 
         array (
@@ -648,6 +674,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\LivroSeeder' => __DIR__ . '/../..' . '/database/seeders/LivroSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
@@ -2116,8 +2143,16 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Illuminate\\Foundation\\Application' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Application.php',
         'Illuminate\\Foundation\\Auth\\Access\\Authorizable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php',
         'Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php',
+        'Illuminate\\Foundation\\Auth\\AuthenticatesUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/AuthenticatesUsers.php',
+        'Illuminate\\Foundation\\Auth\\ConfirmsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ConfirmsPasswords.php',
         'Illuminate\\Foundation\\Auth\\EmailVerificationRequest' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/EmailVerificationRequest.php',
+        'Illuminate\\Foundation\\Auth\\RedirectsUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RedirectsUsers.php',
+        'Illuminate\\Foundation\\Auth\\RegistersUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RegistersUsers.php',
+        'Illuminate\\Foundation\\Auth\\ResetsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ResetsPasswords.php',
+        'Illuminate\\Foundation\\Auth\\SendsPasswordResetEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/SendsPasswordResetEmails.php',
+        'Illuminate\\Foundation\\Auth\\ThrottlesLogins' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ThrottlesLogins.php',
         'Illuminate\\Foundation\\Auth\\User' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/User.php',
+        'Illuminate\\Foundation\\Auth\\VerifiesEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/VerifiesEmails.php',
         'Illuminate\\Foundation\\Bootstrap\\BootProviders' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php',
         'Illuminate\\Foundation\\Bootstrap\\HandleExceptions' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php',
         'Illuminate\\Foundation\\Bootstrap\\LoadConfiguration' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php',
@@ -2903,6 +2938,15 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Laravel\\Ui\\AuthCommand' => __DIR__ . '/..' . '/laravel/ui/src/AuthCommand.php',
+        'Laravel\\Ui\\AuthRouteMethods' => __DIR__ . '/..' . '/laravel/ui/src/AuthRouteMethods.php',
+        'Laravel\\Ui\\ControllersCommand' => __DIR__ . '/..' . '/laravel/ui/src/ControllersCommand.php',
+        'Laravel\\Ui\\Presets\\Bootstrap' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Bootstrap.php',
+        'Laravel\\Ui\\Presets\\Preset' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Preset.php',
+        'Laravel\\Ui\\Presets\\React' => __DIR__ . '/..' . '/laravel/ui/src/Presets/React.php',
+        'Laravel\\Ui\\Presets\\Vue' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Vue.php',
+        'Laravel\\Ui\\UiCommand' => __DIR__ . '/..' . '/laravel/ui/src/UiCommand.php',
+        'Laravel\\Ui\\UiServiceProvider' => __DIR__ . '/..' . '/laravel/ui/src/UiServiceProvider.php',
         'League\\CommonMark\\CommonMarkConverter' => __DIR__ . '/..' . '/league/commonmark/src/CommonMarkConverter.php',
         'League\\CommonMark\\ConverterInterface' => __DIR__ . '/..' . '/league/commonmark/src/ConverterInterface.php',
         'League\\CommonMark\\Delimiter\\Delimiter' => __DIR__ . '/..' . '/league/commonmark/src/Delimiter/Delimiter.php',
@@ -6413,10 +6457,27 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'Uspdev\\Cache\\Cache' => __DIR__ . '/..' . '/uspdev/cache/src/Cache.php',
+        'Uspdev\\Provider\\ReplicadoFaker' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/Provider/ReplicadoFaker.php',
+        'Uspdev\\Replicado\\Bempatrimoniado' => __DIR__ . '/..' . '/uspdev/replicado/src/Bempatrimoniado.php',
+        'Uspdev\\Replicado\\Beneficio' => __DIR__ . '/..' . '/uspdev/replicado/src/Beneficio.php',
+        'Uspdev\\Replicado\\CEU' => __DIR__ . '/..' . '/uspdev/replicado/src/CEU.php',
+        'Uspdev\\Replicado\\DB' => __DIR__ . '/..' . '/uspdev/replicado/src/DB.php',
+        'Uspdev\\Replicado\\Estrutura' => __DIR__ . '/..' . '/uspdev/replicado/src/Estrutura.php',
+        'Uspdev\\Replicado\\Financeiro' => __DIR__ . '/..' . '/uspdev/replicado/src/Financeiro.php',
+        'Uspdev\\Replicado\\Graduacao' => __DIR__ . '/..' . '/uspdev/replicado/src/Graduacao.php',
+        'Uspdev\\Replicado\\Lattes' => __DIR__ . '/..' . '/uspdev/replicado/src/Lattes.php',
+        'Uspdev\\Replicado\\Pesquisa' => __DIR__ . '/..' . '/uspdev/replicado/src/Pesquisa.php',
+        'Uspdev\\Replicado\\Pessoa' => __DIR__ . '/..' . '/uspdev/replicado/src/Pessoa.php',
+        'Uspdev\\Replicado\\Posgraduacao' => __DIR__ . '/..' . '/uspdev/replicado/src/Posgraduacao.php',
+        'Uspdev\\Replicado\\Replicado' => __DIR__ . '/..' . '/uspdev/replicado/src/Replicado.php',
+        'Uspdev\\Replicado\\Uteis' => __DIR__ . '/..' . '/uspdev/replicado/src/Uteis.php',
         'Uspdev\\UspTheme\\Events\\UspThemeParseKey' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/Events/UspThemeParseKey.php',
         'Uspdev\\UspTheme\\Facades\\UspTheme' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/Facades/UspTheme.php',
         'Uspdev\\UspTheme\\ServiceProvider' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/ServiceProvider.php',
         'Uspdev\\UspTheme\\UspTheme' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/UspTheme.php',
+        'Uspdev\\UspdevFakerServiceProvider' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/UspdevFakerServiceProvider.php',
+        'Uspdev\\Utils\\RandomReplicado' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/Utils/RandomReplicado.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',

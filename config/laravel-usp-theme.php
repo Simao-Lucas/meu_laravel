@@ -51,9 +51,9 @@ $menu = [
         'can' => '',
     ],
     [
-        'text' => 'Drop Down',
-        'submenu' => $submenu2,
-        'can' => '',
+        // 'text' => 'Drop Down',
+        // 'submenu' => $submenu2,
+        // 'can' => '',
     ],
     [
         'text' => 'Está logado',

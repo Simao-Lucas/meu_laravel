@@ -1,9 +1,27 @@
 <?php return array (
+  'kyslik/column-sortable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Kyslik\\ColumnSortable\\ColumnSortableServiceProvider',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
     array (
       0 => 'Laravel\\Sail\\SailServiceProvider',
+    ),
+  ),
+  'laravel/socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
   'laravel/tinker' => 
@@ -41,6 +59,20 @@
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
+  'socialiteproviders/manager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'SocialiteProviders\\Manager\\ServiceProvider',
+    ),
+  ),
+  'spatie/laravel-permission' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
   'uspdev/laravel-usp-faker' => 
   array (
     'providers' => 
@@ -57,6 +89,13 @@
     'aliases' => 
     array (
       'UspTheme' => 'Uspdev\\UspTheme\\Facades\\UspTheme',
+    ),
+  ),
+  'uspdev/senhaunica-socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Uspdev\\SenhaunicaSocialite\\SenhaunicaServiceProvider',
     ),
   ),
 );

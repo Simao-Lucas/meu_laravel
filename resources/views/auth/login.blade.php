@@ -22,5 +22,11 @@
             <button type="submit" class="btn btn-primary">Entrar</button>
         </div>
     </div>
+    <br>
+    <div class="form-group row mb-0">
+        <div class="col-md-8 offset-md-4">
+            <a href="/login/senhaunica" type="submit" class="btn btn-primary">Login com senha única</a>
+        </div>
+    </div>
 </form>
 @endsection

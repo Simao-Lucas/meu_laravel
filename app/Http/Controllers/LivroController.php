@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 use App\Models\Livro;
+use App\Models\User;
 
 
 class LivroController extends Controller
@@ -36,6 +37,7 @@ class LivroController extends Controller
     public function store(StoreLivroRequest $request)
     {
         $validated = $request->validated();
+        $validated['user_id'] = auth()->user()->id;
         $livro = Livro::create($validated);
         request()->session()->flash('alert-info','Livro cadastrado com sucesso');
 
@@ -68,6 +70,7 @@ class LivroController extends Controller
     public function update(UpdateLivroRequest $request, Livro $livro)
     {
         $validated = $request->validated();
+        $validated['user_id'] = auth()->user()->id;
         $livro->update($validated);
         request()->session()->flash('alert-info','Livro atualizado com sucesso');
         

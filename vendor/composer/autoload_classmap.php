@@ -2795,6 +2795,7 @@ return array(
     'Laravel\\Socialite\\Two\\Token' => $vendorDir . '/laravel/socialite/src/Two/Token.php',
     'Laravel\\Socialite\\Two\\TwitterProvider' => $vendorDir . '/laravel/socialite/src/Two/TwitterProvider.php',
     'Laravel\\Socialite\\Two\\User' => $vendorDir . '/laravel/socialite/src/Two/User.php',
+    'Laravel\\Socialite\\Two\\XProvider' => $vendorDir . '/laravel/socialite/src/Two/XProvider.php',
     'Laravel\\Tinker\\ClassAliasAutoloader' => $vendorDir . '/laravel/tinker/src/ClassAliasAutoloader.php',
     'Laravel\\Tinker\\Console\\TinkerCommand' => $vendorDir . '/laravel/tinker/src/Console/TinkerCommand.php',
     'Laravel\\Tinker\\TinkerCaster' => $vendorDir . '/laravel/tinker/src/TinkerCaster.php',

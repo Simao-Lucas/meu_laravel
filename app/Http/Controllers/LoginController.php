@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Socialite;
-use App\Models\USer;
+use App\Models\User;
 use Auth;
 
 class LoginController extends Controller
@@ -26,13 +26,18 @@ class LoginController extends Controller
         return Socialite::driver('senhaunica')->redirect();
     }
 
-    public function handleProviderCallback(){
+    public function handleProviderCallback()
+    {
         $userSenhaUnica = Socialite::driver('senhaunica')->user();
         $user = User::where('codpes',$userSenhaUnica->codpes)->first();
 
-        if (is_null($user)) {
-            request()->session()->flash('alert-danger','Usuário sem acesso ao sistema');
-            return redirect('/');
+        // if (is_null($user)) {
+        //     request()->session()->flash('alert-danger','Usuário sem acesso ao sistema');
+        //     return redirect('/');
+        // }
+
+        if (is_null($user)){
+            $user = new User;
         }
 
         // bind do dados retornados

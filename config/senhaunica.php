@@ -42,7 +42,7 @@ return [
 
     // usa as permissoes internas, padrão para v4.
     // Se false, não usará permission ao efetuar login
-    'permission' => true,
+    'permission' => false,
 
     // permite login somente de usuários já cadastrados na base local ou autorizados nos admins, gerentes ou users
     'onlyLocalUsers' => false,

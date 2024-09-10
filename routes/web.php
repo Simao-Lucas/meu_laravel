@@ -13,5 +13,5 @@ Route::post('logout',[LoginCOntroller::class, 'logout']);
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('login/senhaunica', [LoginController::class, 'redirectToProvider']);
-Route::get('callback', [LoginController::class, 'handleProviderCallback']);
+Route::get('/login/senhaunica', [LoginController::class, 'redirectToProvider']);
+Route::get('/callback', [LoginController::class, 'handleProviderCallback']);

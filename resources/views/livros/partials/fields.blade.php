@@ -2,6 +2,7 @@
     <li><a href="/livros/{{$livro->id}}">{{$livro->titulo ?? ''}}</a></li>
     <li>{{$livro->autor ?? ''}}</li>
     <li>{{$livro->isbn ?? ''}}</li>
+    <li>Criado por {{$livro->user->name ?? ''}}</li>
     <li><a href="/livros/{{$livro->id}}/edit">Editar</a></li>
     <li>
     <form action="/livros/{{ $livro->id }} " method="post">

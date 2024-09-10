@@ -20,6 +20,6 @@ class LivroSeeder extends Seeder
         ];
 
         Livro::create($livro);
-        Livro::factory(100)->create();
+        Livro::factory(10)->create();
     }
 }

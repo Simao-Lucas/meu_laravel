@@ -16,7 +16,9 @@ class LivroSeeder extends Seeder
         $livro = [
             'titulo' => "Quincas Borba",
             'autor'  => "Machado de Assis",
-            'isbn'   => "9780195106817"
+            'isbn'   => "9780195106817",
+            'tipo'   => "Nacional",
+            'preco'  => 19.99
         ];
 
         Livro::create($livro);

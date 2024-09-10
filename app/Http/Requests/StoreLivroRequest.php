@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use App\Models\Livro;
 
 class StoreLivroRequest extends FormRequest
 {
@@ -24,7 +26,9 @@ class StoreLivroRequest extends FormRequest
         return [
             'titulo' => 'required',
             'autor' => 'required',
-            'isbn' => 'required | unique:livros,isbn',
+            'isbn' => ['required','unique:livros,isbn'],
+            'tipo' => ['required', Rule::in(Livro::tipos())],
+            'preco' => 'nullable'
         ];
     }
 
@@ -35,6 +39,7 @@ class StoreLivroRequest extends FormRequest
             'autor.required'=> 'Insira um autor.',
             'isbn.required'=> 'Insira um isbn.',
             'isbn.unique' => 'Isbn já cadastrado.',
+            'tipo.required' => 'Escolha um tipo.'
         ];
     }
 }

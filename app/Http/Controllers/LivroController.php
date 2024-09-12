@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateLivroRequest;
 use App\Models\Livro;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class LivroController extends Controller
@@ -43,6 +44,9 @@ class LivroController extends Controller
      */
     public function store(StoreLivroRequest $request)
     {
+        if(is_null(Auth::user())){
+            session()->flash('alert-danger','Você precisa estar logado.');
+            return view('empty');}
         $validated = $request->validated();
         $validated['user_id'] = auth()->user()->id;
         $livro = Livro::create($validated);
@@ -76,6 +80,9 @@ class LivroController extends Controller
      */
     public function update(UpdateLivroRequest $request, Livro $livro)
     {
+        if(is_null(Auth::user())){
+            session()->flash('alert-danger','Você precisa estar logado.');
+            return view('empty');}
         $validated = $request->validated();
         $validated['user_id'] = auth()->user()->id;
         $livro->update($validated);

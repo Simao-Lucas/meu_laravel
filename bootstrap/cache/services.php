@@ -35,8 +35,10 @@
     31 => 'Spatie\\Permission\\PermissionServiceProvider',
     32 => 'Uspdev\\UspdevFakerServiceProvider',
     33 => 'Uspdev\\UspTheme\\ServiceProvider',
-    34 => 'Uspdev\\SenhaunicaSocialite\\SenhaunicaServiceProvider',
-    35 => 'App\\Providers\\AppServiceProvider',
+    34 => 'Uspdev\\UspdevValidatorProvider',
+    35 => 'Uspdev\\SenhaunicaSocialite\\SenhaunicaServiceProvider',
+    36 => 'App\\Providers\\AppServiceProvider',
+    37 => 'App\\Providers\\AuthServiceProvider',
   ),
   'eager' => 
   array (
@@ -58,8 +60,10 @@
     15 => 'Spatie\\Permission\\PermissionServiceProvider',
     16 => 'Uspdev\\UspdevFakerServiceProvider',
     17 => 'Uspdev\\UspTheme\\ServiceProvider',
-    18 => 'Uspdev\\SenhaunicaSocialite\\SenhaunicaServiceProvider',
-    19 => 'App\\Providers\\AppServiceProvider',
+    18 => 'Uspdev\\UspdevValidatorProvider',
+    19 => 'Uspdev\\SenhaunicaSocialite\\SenhaunicaServiceProvider',
+    20 => 'App\\Providers\\AppServiceProvider',
+    21 => 'App\\Providers\\AuthServiceProvider',
   ),
   'deferred' => 
   array (

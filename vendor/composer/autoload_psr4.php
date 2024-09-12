@@ -14,7 +14,7 @@ return array(
     'Uspdev\\SenhaunicaSocialite\\' => array($vendorDir . '/uspdev/senhaunica-socialite/src'),
     'Uspdev\\Replicado\\' => array($vendorDir . '/uspdev/replicado/src'),
     'Uspdev\\Cache\\' => array($vendorDir . '/uspdev/cache/src'),
-    'Uspdev\\' => array($vendorDir . '/uspdev/laravel-usp-faker/src'),
+    'Uspdev\\' => array($vendorDir . '/uspdev/laravel-usp-faker/src', $vendorDir . '/uspdev/laravel-usp-validators/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
     'Tests\\' => array($baseDir . '/tests'),
     'Termwind\\' => array($vendorDir . '/nunomaduro/termwind/src'),

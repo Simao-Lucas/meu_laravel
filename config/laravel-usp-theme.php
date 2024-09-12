@@ -38,7 +38,7 @@ $submenu2 = [
 $menu = [
     [
         'text' => '<i class="fas fa-home"></i> Home',
-        'url' => 'http://127.0.0.1:8000/livros/',
+        'url' => 'http://127.0.0.1:8000/',
         'can' => '',
     ],
     [
@@ -46,8 +46,18 @@ $menu = [
         'key' => 'menu_dinamico',
     ],
     [
+        'text' => 'Acervo',
+        'url' => 'http://127.0.0.1:8000/livros',
+        'can' => '',
+    ],
+    [
         'text' => 'Cadastrar livro',
         'url' => 'http://127.0.0.1:8000/livros/create',
+        'can' => '',
+    ],
+    [
+        'text' => 'Cadastrar Admin',
+        'url' => 'http://127.0.0.1:8000/novoadmin',
         'can' => '',
     ],
     [

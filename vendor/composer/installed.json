@@ -9211,6 +9211,56 @@
             "install-path": "../uspdev/laravel-usp-theme"
         },
         {
+            "name": "uspdev/laravel-usp-validators",
+            "version": "1.0.6",
+            "version_normalized": "1.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uspdev/laravel-usp-validators.git",
+                "reference": "5c171c2b7d10d83a373030ae12279c249419ebe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uspdev/laravel-usp-validators/zipball/5c171c2b7d10d83a373030ae12279c249419ebe6",
+                "reference": "5c171c2b7d10d83a373030ae12279c249419ebe6",
+                "shasum": ""
+            },
+            "require": {
+                "uspdev/replicado": "^1.5"
+            },
+            "time": "2020-09-23T20:33:53+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Uspdev\\UspdevValidatorProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Uspdev\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "Uma biblioteca contendo validações USPdev",
+            "support": {
+                "issues": "https://github.com/uspdev/laravel-usp-validators/issues",
+                "source": "https://github.com/uspdev/laravel-usp-validators/tree/1.0.6"
+            },
+            "install-path": "../uspdev/laravel-usp-validators"
+        },
+        {
             "name": "uspdev/replicado",
             "version": "1.24.0",
             "version_normalized": "1.24.0.0",

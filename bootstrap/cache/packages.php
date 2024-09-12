@@ -91,6 +91,13 @@
       'UspTheme' => 'Uspdev\\UspTheme\\Facades\\UspTheme',
     ),
   ),
+  'uspdev/laravel-usp-validators' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Uspdev\\UspdevValidatorProvider',
+    ),
+  ),
   'uspdev/senhaunica-socialite' => 
   array (
     'providers' => 
